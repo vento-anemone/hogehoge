@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Face ID Device</key>
+	<dict>
+        <key>iPhone10,3</key>
+        <string>iPhone X</string>
+        <key>iPhone10,6</key>
+        <string>iPhone X</string>
+	</dict>
+	<key>Touch ID Device</key>
+	<dict>
+        <key>iPhone6,1</key>
+        <string>iPhone 5s</string>
+        <key>iPhone6,2</key>
+        <string>iPhone 5s</string>
+        <key>iPhone7,1</key>
+        <string>iPhone 6 Plus</string>
+        <key>iPhone7,2</key>
+        <string>iPhone 6</string>
+        <key>iPhone8,1</key>
+        <string>iPhone 6s</string>
+        <key>iPhone8,2</key>
+        <string>iPhone 6s Plus</string>
+        <key>iPhone8,4</key>
+        <string>iPhone SE</string>
+        <key>iPhone9,1</key>
+        <string>iPhone 7</string>
+        <key>iPhone9,3</key>
+        <string>iPhone 7</string>
+        <key>iPhone9,2</key>
+        <string>iPhone 7 Plus</string>
+        <key>iPhone9,4</key>
+        <string>iPhone 7 Plus</string>
+        <key>iPhone10,1</key>
+        <string>iPhone 8</string>
+        <key>iPhone10,4</key>
+        <string>iPhone 8</string>
+        <key>iPhone10,2</key>
+        <string>iPhone 8 Plus</string>
+        <key>iPhone10,5</key>
+        <string>iPhone 8 Plus</string>
+        <key>iPad4,7</key>
+        <string>iPad mini 3</string>
+        <key>iPad4,8</key>
+        <string>iPad mini 3</string>
+        <key>iPad4,9</key>
+        <string>iPad mini 3</string>
+        <key>iPad5,1</key>
+        <string>iPad mini 4</string>
+        <key>iPad5,2</key>
+        <string>iPad mini 4</string>
+        <key>iPad5,3</key>
+        <string>iPad Air 2</string>
+        <key>iPad5,4</key>
+        <string>iPad Air 2</string>
+        <key>iPad6,7</key>
+        <string>iPad Pro (12.9 inch)</string>
+        <key>iPad6,8</key>
+        <string>iPad Pro (12.9 inch)</string>
+        <key>iPad6,3</key>
+        <string>iPad Pro (9.7 inch)</string>
+        <key>iPad6,4</key>
+        <string>iPad Pro (9.7 inch)</string>
+        <key>iPad6,11</key>
+        <string>iPad (5th generation)</string>
+        <key>iPad6,12</key>
+        <string>iPad (5th generation)</string>
+        <key>iPad7,1</key>
+        <string>iPad Pro (12.9-inch, 2nd generation)</string>
+        <key>iPad7,2</key>
+        <string>iPad Pro (12.9-inch, 2nd generation)</string>
+        <key>iPad7,3</key>
+        <string>iPad Pro (10.5-inch)</string>
+        <key>iPad7,4</key>
+        <string>iPad Pro (10.5-inch)</string>
+	</dict>
+</dict>
+</plist>

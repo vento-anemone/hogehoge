@@ -17,6 +17,10 @@
 		E5E424321FC6B481000919AD /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E424301FC6B481000919AD /* CustomTableViewCell.swift */; };
 		E5E424331FC6B481000919AD /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5E424311FC6B481000919AD /* CustomTableViewCell.xib */; };
 		E5E424351FC6C512000919AD /* OtherBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E424341FC6C512000919AD /* OtherBuilder.swift */; };
+		E5E424371FC6CFC3000919AD /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E424361FC6CFC3000919AD /* ParentViewController.swift */; };
+		E5E424391FC6D0B2000919AD /* ParentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E424381FC6D0B2000919AD /* ParentBuilder.swift */; };
+		E5E4243B1FC6D0E9000919AD /* ParentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E4243A1FC6D0E9000919AD /* ParentViewController.storyboard */; };
+		E5E4243D1FC6D4A1000919AD /* DeviceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5E4243C1FC6D4A1000919AD /* DeviceList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		E5E424301FC6B481000919AD /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E5E424311FC6B481000919AD /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		E5E424341FC6C512000919AD /* OtherBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherBuilder.swift; sourceTree = "<group>"; };
+		E5E424361FC6CFC3000919AD /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		E5E424381FC6D0B2000919AD /* ParentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentBuilder.swift; sourceTree = "<group>"; };
+		E5E4243A1FC6D0E9000919AD /* ParentViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParentViewController.storyboard; sourceTree = "<group>"; };
+		E5E4243C1FC6D4A1000919AD /* DeviceList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DeviceList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 				E58C5ADE1FC60A78000ABB1D /* Assets.xcassets */,
 				E58C5AE01FC60A78000ABB1D /* LaunchScreen.storyboard */,
 				E58C5AE31FC60A78000ABB1D /* Info.plist */,
+				E5E4243C1FC6D4A1000919AD /* DeviceList.plist */,
 			);
 			path = hoge;
 			sourceTree = "<group>";
@@ -89,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				E5E424341FC6C512000919AD /* OtherBuilder.swift */,
+				E5E424381FC6D0B2000919AD /* ParentBuilder.swift */,
 			);
 			path = builder;
 			sourceTree = "<group>";
@@ -98,6 +108,8 @@
 			children = (
 				E5E424281FC6B240000919AD /* OtherViewController.swift */,
 				E5E4242D1FC6B3B4000919AD /* OtherViewController.storyboard */,
+				E5E424361FC6CFC3000919AD /* ParentViewController.swift */,
+				E5E4243A1FC6D0E9000919AD /* ParentViewController.storyboard */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -143,6 +155,7 @@
 				TargetAttributes = {
 					E58C5AD31FC60A78000ABB1D = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -170,7 +183,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E4243D1FC6D4A1000919AD /* DeviceList.plist in Resources */,
 				E58C5AE21FC60A78000ABB1D /* LaunchScreen.storyboard in Resources */,
+				E5E4243B1FC6D0E9000919AD /* ParentViewController.storyboard in Resources */,
 				E58C5ADF1FC60A78000ABB1D /* Assets.xcassets in Resources */,
 				E5E4242E1FC6B3B4000919AD /* OtherViewController.storyboard in Resources */,
 				E5E424331FC6B481000919AD /* CustomTableViewCell.xib in Resources */,
@@ -186,7 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E58C5ADA1FC60A78000ABB1D /* ViewController.swift in Sources */,
+				E5E424391FC6D0B2000919AD /* ParentBuilder.swift in Sources */,
 				E5E424291FC6B240000919AD /* OtherViewController.swift in Sources */,
+				E5E424371FC6CFC3000919AD /* ParentViewController.swift in Sources */,
 				E5E424351FC6C512000919AD /* OtherBuilder.swift in Sources */,
 				E5E424321FC6B481000919AD /* CustomTableViewCell.swift in Sources */,
 				E58C5AD81FC60A78000ABB1D /* AppDelegate.swift in Sources */,
@@ -331,7 +348,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoge.hoge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -345,7 +362,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoge.hoge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

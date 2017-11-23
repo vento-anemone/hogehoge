@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class OtherViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableview: UITableView!
     
@@ -30,7 +31,7 @@ class OtherViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -38,6 +39,25 @@ class OtherViewController: UIViewController, UITableViewDataSource, UITableViewD
         switch indexPath.row {
         case 0:
             cell.textLabel?.text = "AAAA"
+            cell.detailTextLabel?.textColor = UIColor.clear
+        case 1:
+            if let file = Bundle.main.path(forResource: "DeviceList", ofType: "plist") {
+                if let deviceDic = NSDictionary(contentsOfFile: file) {
+                    if let deviceList1 = deviceDic.value(forKey: "Face ID Device") as? Dictionary<String, Any>,
+                        let deviceList2 = deviceDic.value(forKey: "Touch ID Device") as? Dictionary<String, Any>{
+                        NSLog("\(String(describing: deviceList1))")
+                        NSLog("\(String(describing: deviceList2))")
+                        
+                        if deviceList1.first(where: {$0.key == "iPhone7,1"}) != nil {
+                            cell.textLabel?.text = "顔あった"
+                        }
+                        if deviceList2.first(where: {$0.key == "iPhone7,1"}) != nil {
+                            cell.textLabel?.text = "ウビあった"
+                        }
+                    }
+                }
+            }
+
             cell.detailTextLabel?.textColor = UIColor.clear
         default:
             cell.textLabel?.text = "BBBB"
