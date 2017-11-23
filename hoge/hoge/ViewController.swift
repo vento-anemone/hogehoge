@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func tapNavigation(_ sender: Any) {
+        let vc = OtherBuilder.build()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
