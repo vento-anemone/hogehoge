@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E570174D1FC6F4C5003DDBAF /* maskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570174C1FC6F4C5003DDBAF /* maskView.swift */; };
+		E570174F1FC6FE79003DDBAF /* maskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E570174E1FC6FE79003DDBAF /* maskView.xib */; };
 		E58C5AD81FC60A78000ABB1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58C5AD71FC60A78000ABB1D /* AppDelegate.swift */; };
 		E58C5ADA1FC60A78000ABB1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58C5AD91FC60A78000ABB1D /* ViewController.swift */; };
 		E58C5ADD1FC60A78000ABB1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58C5ADB1FC60A78000ABB1D /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E570174C1FC6F4C5003DDBAF /* maskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maskView.swift; sourceTree = "<group>"; };
+		E570174E1FC6FE79003DDBAF /* maskView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = maskView.xib; sourceTree = "<group>"; };
 		E58C5AD41FC60A78000ABB1D /* hoge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hoge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58C5AD71FC60A78000ABB1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58C5AD91FC60A78000ABB1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 			children = (
 				E5E424301FC6B481000919AD /* CustomTableViewCell.swift */,
 				E5E424311FC6B481000919AD /* CustomTableViewCell.xib */,
+				E570174C1FC6F4C5003DDBAF /* maskView.swift */,
+				E570174E1FC6FE79003DDBAF /* maskView.xib */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -187,6 +193,7 @@
 				E58C5AE21FC60A78000ABB1D /* LaunchScreen.storyboard in Resources */,
 				E5E4243B1FC6D0E9000919AD /* ParentViewController.storyboard in Resources */,
 				E58C5ADF1FC60A78000ABB1D /* Assets.xcassets in Resources */,
+				E570174F1FC6FE79003DDBAF /* maskView.xib in Resources */,
 				E5E4242E1FC6B3B4000919AD /* OtherViewController.storyboard in Resources */,
 				E5E424331FC6B481000919AD /* CustomTableViewCell.xib in Resources */,
 				E58C5ADD1FC60A78000ABB1D /* Main.storyboard in Resources */,
@@ -200,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E570174D1FC6F4C5003DDBAF /* maskView.swift in Sources */,
 				E58C5ADA1FC60A78000ABB1D /* ViewController.swift in Sources */,
 				E5E424391FC6D0B2000919AD /* ParentBuilder.swift in Sources */,
 				E5E424291FC6B240000919AD /* OtherViewController.swift in Sources */,
