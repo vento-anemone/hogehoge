@@ -67,3 +67,4 @@ fastlane/screenshots
 fastlane/test_output
 *.xcworkspacedata
 hoge/hoge.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+*DS_Store
