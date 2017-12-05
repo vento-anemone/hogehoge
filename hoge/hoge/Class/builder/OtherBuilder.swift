@@ -13,4 +13,8 @@ struct OtherBuilder {
         let viewController = UIStoryboard.init(name: "OtherViewController", bundle: nil).instantiateViewController(withIdentifier: "OtherViewController")
         return viewController
     }
+    static func SFbuild() -> UIViewController {
+        let viewController = UIStoryboard.init(name: "testViewController", bundle: nil).instantiateInitialViewController()
+        return viewController!
+    }
 }
