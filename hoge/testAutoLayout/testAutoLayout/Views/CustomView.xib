@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="testAutoLayout" customModuleProvider="target">
+            <connections>
+                <outletCollection property="aaa" destination="sGv-pf-hdp" collectionClass="NSMutableArray" id="HQe-e9-Pge"/>
+                <outletCollection property="aaa" destination="oby-cI-xNB" collectionClass="NSMutableArray" id="EZ1-gC-C79"/>
+                <outletCollection property="aaa" destination="dvC-xA-D4H" collectionClass="NSMutableArray" id="vRv-1n-giE"/>
+                <outletCollection property="aaa" destination="8ri-ZO-ZrS" collectionClass="NSMutableArray" id="3sR-Wo-DnH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cZV-tv-uOh">
+                    <rect key="frame" x="15" y="15" width="345" height="105"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sGv-pf-hdp" customClass="group" customModule="testAutoLayout" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="15"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GWo-BL-wsQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="e8B-bs-Z9s"/>
+                                        <constraint firstAttribute="width" secondItem="GWo-BL-wsQ" secondAttribute="height" multiplier="1:1" id="uOZ-hU-Atg"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhN-B5-yaD">
+                                    <rect key="frame" x="23" y="0.0" width="322" height="15"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <connections>
+                                <outlet property="imageView" destination="GWo-BL-wsQ" id="uwE-Yq-6lC"/>
+                                <outlet property="label" destination="vhN-B5-yaD" id="888-7f-bZ9"/>
+                            </connections>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oby-cI-xNB" customClass="group" customModule="testAutoLayout" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="30" width="345" height="15"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ozf-EI-BiJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Ozf-EI-BiJ" secondAttribute="height" multiplier="1:1" id="LoT-jt-D4U"/>
+                                        <constraint firstAttribute="height" constant="15" id="h8c-0c-RZt"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkl-SD-DUx">
+                                    <rect key="frame" x="23" y="0.0" width="322" height="15"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <connections>
+                                <outlet property="imageView" destination="Ozf-EI-BiJ" id="4v6-aZ-fxK"/>
+                                <outlet property="label" destination="Fkl-SD-DUx" id="DAn-Do-5xo"/>
+                            </connections>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dvC-xA-D4H" customClass="group" customModule="testAutoLayout" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="60" width="345" height="15"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hfL-pi-3zB">
+                                    <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="hfL-pi-3zB" secondAttribute="height" multiplier="1:1" id="NGU-D6-1Ja"/>
+                                        <constraint firstAttribute="height" constant="15" id="wcv-rT-LnV"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdt-VA-9AZ">
+                                    <rect key="frame" x="23" y="0.0" width="322" height="15"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <connections>
+                                <outlet property="imageView" destination="hfL-pi-3zB" id="mrL-t9-KJ0"/>
+                                <outlet property="label" destination="hdt-VA-9AZ" id="GaA-IB-mJQ"/>
+                            </connections>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8ri-ZO-ZrS" customClass="group" customModule="testAutoLayout" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="90" width="345" height="15"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="po5-rN-ioc">
+                                    <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="po5-rN-ioc" secondAttribute="height" multiplier="1:1" id="2hX-mt-BbB"/>
+                                        <constraint firstAttribute="height" constant="15" id="m96-yF-dmV"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1i-6e-DMV">
+                                    <rect key="frame" x="23" y="0.0" width="322" height="15"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <connections>
+                                <outlet property="imageView" destination="po5-rN-ioc" id="BOZ-AV-Uid"/>
+                                <outlet property="label" destination="p1i-6e-DMV" id="FbP-v0-plK"/>
+                            </connections>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cZV-tv-uOh" secondAttribute="trailing" constant="15" id="Hnf-ag-CIJ"/>
+                <constraint firstItem="cZV-tv-uOh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="OvW-r8-aOs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cZV-tv-uOh" secondAttribute="bottom" constant="15" id="bdU-wA-6Ti"/>
+                <constraint firstItem="cZV-tv-uOh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="mfk-w7-HSY"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="360.2698650674663"/>
+        </view>
+    </objects>
+</document>
