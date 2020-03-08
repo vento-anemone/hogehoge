@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let str = "aaa,bbb,ccc,ddd"
+        var sss = str
+        if 16 < sss.count {
+            let index = str.lastIndex(of: ",")?.encodedOffset ?? 0
+            sss = String(str.prefix(index + 1))
+        }
+        
+        NSLog("sss \(sss)")
+        
         return true
     }
 
